@@ -84,13 +84,13 @@ cp = charpoly(A)
 cp
 ```
 
-**_Characteristic polynomial equation for given matrix is $`r cp[4]`x^3 + `r cp[3]`x^2 `r cp[2]`x + `r cp[1]`$_**
+**_Characteristic polynomial equation for given matrix is $`r cp[1]`x^3 `r cp[2]`x^2 + `r cp[3]`x `r cp[4]`$_**
 
 **_Eigenvalues_**
 
 **_According to theorem EMRCP, Eigenvalues of a Matrix are Roots of Characteristic Polynomials Suppose A is a square matrix. Then $\lambda$ is an eigenvalue of A if and only if $p_{A} (\lambda) = 0$_**
 
-**_By setting the characteristic polynomial equation equal to zero, $p_{A}(x) = `r cp[4]`x^3 + `r cp[3]`x^2 `r cp[2]`x + `r cp[1]` = 0$_**
+**_By setting the characteristic polynomial equation equal to zero, $p_{A}(x) = `r cp[1]`x^3 `r cp[2]`x^2 + `r cp[3]`x `r cp[4]` = 0$_**
 
 ```{r, echo=T}
 ev = eigen(A)
